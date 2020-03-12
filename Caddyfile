@@ -1,0 +1,13 @@
+0.0.0.0:80 {
+    root /var/speedtest
+    cgi /empty /var/speedtest/empty.pl
+    templates
+    limits 100mb
+	header /grabage.dat {
+	    Access-Control-Allow-Origin *
+		Access-Control-Allow-Methods "GET, POST"
+		Cache-Control "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+		Cache-Control "post-check=0, pre-check=0"
+		Pragma no-cache
+    }
+}
